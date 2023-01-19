@@ -6,32 +6,22 @@ namespace AutoComplete
     {
         public List<string> GetMatches(string prefix)
         {
-            var currentNode = Root;
+            var node = GetEndNode(prefix);
             var result = new List<string>();
-            foreach (var c in prefix)
-            {
-                if (!currentNode.Children.ContainsKey(c))
-                {
-                    return result;
-                }
-
-                currentNode = currentNode.Children[c];
-            }
-            GetMatches(currentNode, result, prefix);
+            Helpers.GetMatches(node, result, prefix);
             return result;
         }
 
-        private void GetMatches(TrieNode node, List<string> result, string prefix)
+        private TrieNode GetEndNode(string prefix)
         {
-            if (node.IsEndOfWord)
+            var node = Root;
+            TrieNode childNode;
+            foreach (var c in prefix)
             {
-                result.Add(prefix);
+                node = node.Children.TryGetValue(c, out childNode) ? childNode : null;
+                if (node == null) break;
             }
-
-            foreach (var child in node.Children)
-            {
-                GetMatches(child.Value, result, prefix + child.Key);
-            }
+            return node;
         }
     }
 }

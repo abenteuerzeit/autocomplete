@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 namespace AutoComplete
 {
     public class Trie
@@ -14,44 +13,32 @@ namespace AutoComplete
 
         public void Insert(string word)
         {
-            var currentNode = Root;
+            var node = Root;
             foreach (var c in word)
             {
-                if (!currentNode.Children.ContainsKey(c))
-                {
-                    currentNode.Children.Add(c, new TrieNode(c));
-                }
-
-                currentNode = currentNode.Children[c];
+                node = Helpers.AddOrGetChildNode(node, c);
             }
-            currentNode.IsEndOfWord = true;
+            node.IsEndOfWord = true;
         }
 
         public bool Remove(string word)
         {
-            var currentNode = Root;
-            var stack = new Stack<TrieNode>();
-            foreach (var c in word)
+            var node = Root;
+            Stack<TrieNode> stack = new();
+            try
             {
-                if (!currentNode.Children.ContainsKey(c))
+                foreach (var c in word)
                 {
-                    return false;
+                    stack.Push(node);
+                    node = node.Children[c];
                 }
-
-                stack.Push(currentNode);
-                currentNode = currentNode.Children[c];
+                node.IsEndOfWord = false;
+                return !node.IsEndOfWord;
             }
-            if (!currentNode.IsEndOfWord)
+            catch (KeyNotFoundException)
             {
                 return false;
             }
-
-            currentNode.IsEndOfWord = false;
-            if (currentNode.Children.Count == 0)
-            {
-                stack.Pop().Children.Remove(word[word.Length - 1]);
-            }
-            return true;
         }
     }
 }
