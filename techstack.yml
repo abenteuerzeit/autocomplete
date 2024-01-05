@@ -1,7 +1,8 @@
 repo_name: abenteuerzeit/autocomplete
 report_id: d2be698a12b1bd48617cf2ca3b867610
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T10:23:48+00:00'
+timestamp: '2024-01-05T08:49:06+00:00'
 requested_by: abenteuerzeit
 provider: github
 branch: development
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -27,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
   detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
@@ -41,8 +44,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
-  detection_source_url: AutoComplete.Test/AutoComplete.Test.csproj
-  detection_source: AutoComplete/AutoComplete.csproj
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
+  detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
 - name: ASP.NET Core
@@ -56,8 +59,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/11331/asp.net-core.png
-  detection_source_url: AutoComplete.Test/AutoComplete.Test.csproj
-  detection_source: AutoComplete/AutoComplete.csproj
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
+  detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
 - name: Git
@@ -68,6 +71,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete
   detection_source: Repo Metadata
 - name: NUnit
   description: An open-source unit testing framework
@@ -77,6 +81,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
   detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
@@ -88,6 +93,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
   detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
@@ -100,6 +106,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.sln
   detection_source: AutoComplete.sln
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
@@ -112,6 +119,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Text Editor
   image_url: https://img.stackshare.io/service/4202/Visual_Studio_Code_logo.png
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/.vscode/tasks.json
   detection_source: ".vscode/tasks.json"
   last_updated_by: abenteuerzeit
   last_updated_on: 2023-01-19 07:41:11.000000000 Z
@@ -126,7 +134,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13216/default_e23dabba1be2c69fbf5fc50bdc46cbffbe6ca2cb.png
-  detection_source_url: AutoComplete.Test/AutoComplete.Test.csproj
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
   detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
@@ -140,7 +148,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/nuget/image.png
-  detection_source_url: AutoComplete.Test/AutoComplete.Test.csproj
+  detection_source_url: https://github.com/abenteuerzeit/autocomplete/blob/development/AutoComplete.Test/AutoComplete.Test.csproj
   detection_source: AutoComplete.Test/AutoComplete.Test.csproj
   last_updated_by: appuser
   last_updated_on: 2023-01-19 04:48:57.000000000 Z
